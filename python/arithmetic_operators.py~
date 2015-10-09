@@ -1,12 +1,12 @@
 
 def main():
     
-    num1 = input("integer 1 input: ")
-    num2 = input("integer 2 input: ")
+    num1 = int(raw_input())
+    num2 = int(raw_input())
 
-    print((int)num1 + (int)num2)
-    print((int)num1 - (int)num2)
-    print((int)num1 * (int)num2)
+    print(num1 + num2)
+    print(num1 - num2)
+    print(num1 * num2)
 
     return None
 
