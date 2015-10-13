@@ -1,0 +1,34 @@
+
+import string
+
+def main():
+
+    numStudents = input()
+
+    for i in range(numStudents):
+
+        marks = raw_input()
+        numMarks = marks.count(' ')
+        wordList = marks.split(' ')
+
+        avg = 0
+        for j in range(1, numMarks + 1):
+            avg += float(wordList[j])
+
+
+        avg = avg / numMarks
+
+        students = {wordList[0], avg}
+        
+    
+    name = raw_input()
+
+    if (name in students):
+        print (students[name])
+    else:
+        print(average, "not there")
+
+    return None
+
+if __name__ == "__main__":
+    main()
