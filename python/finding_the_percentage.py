@@ -4,13 +4,12 @@ import string
 def main():
 
     numStudents = int(input())
-
+    students = {}
     for i in range(numStudents):
 
         marks = input()
         numMarks = marks.count(' ')
         wordList = marks.split(' ')
-        students = {}
 
         avg = 0
         for j in range(1, numMarks + 1):
